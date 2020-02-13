@@ -19,7 +19,7 @@ def won?(board)
   
     if [position_1, position_2, position_3] == ["X", "X", "X"]
       return WIN_COMBINATIONS[i]
-      
+      binding.pry
     elsif [position_1, position_2, position_3] == ["O", "O", "O"]
       return WIN_COMBINATIONS[i]
       
