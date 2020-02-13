@@ -69,8 +69,7 @@ end
 def winner(board)
   
   number = board.select do |i|
-    i == "X"
-    i == "O"
+    i == "X" || i == "O"
   end
   
   if won?(board) != false
