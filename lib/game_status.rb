@@ -29,11 +29,11 @@ def won?(board)
     elsif [position_1, position_2, position_3] == ["O", "O", "O"]
       return WIN_COMBINATIONS[i]
       
-    elsif board.all? {|i| i == " "}
-      return false
+    # elsif board.all? {|i| i == " "}
+    #   return false
       
-    elsif board.none? {|i| i == " "}
-      return nil
+    # elsif board.none? {|i| i == " "}
+    #   return nil
       
     else
       i += 1
