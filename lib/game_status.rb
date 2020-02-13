@@ -17,7 +17,7 @@ def won?(board)
   
   i = 0
   
-  while i < 9
+  while i < 8
   
     win_position_1 = WIN_COMBINATIONS[i][0]
     win_position_2 = WIN_COMBINATIONS[i][1]
