@@ -11,17 +11,13 @@ WIN_COMBINATIONS = [
   [1,4,7],
   [2,5,8],
   [0,4,8],
-  [2,4,6]]
+  [6,4,2]]
   
 def won?(board)
   
   i = 0
   
   while i < 8
-  
-    win_position_1 = WIN_COMBINATIONS[i][0]
-    win_position_2 = WIN_COMBINATIONS[i][1]
-    win_position_3 = WIN_COMBINATIONS[i][2]
     
     position_1 = board[WIN_COMBINATIONS[i][0]]
     position_2 = board[WIN_COMBINATIONS[i][1]]
