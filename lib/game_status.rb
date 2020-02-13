@@ -5,7 +5,7 @@ end
 
 def won?(board)
   
-  i = 7
+  i = 0
   
   while i < 9
   
