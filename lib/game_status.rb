@@ -29,12 +29,6 @@ def won?(board)
     elsif [position_1, position_2, position_3] == ["O", "O", "O"]
       return WIN_COMBINATIONS[i]
       
-     elsif board.all? {|i| i == " "}
-      return false
-      
-    # elsif board.none? {|i| i == " "}
-    #   return nil
-      
     else
       i += 1
       
@@ -72,19 +66,4 @@ def winner(board)
     board[combo[0]]
   end
 end
-  
-#   number = board.select do |i|
-#     i == "X" || i == "O"
-#   end
-  
-#   if won?(board) != false
-#     if number.count % 2 == 1 
-#       return "O"
-#     else
-#       return "X"
-#     end
-#   elsif draw?(board)
-#     return nil
-#   end
-# end
 
