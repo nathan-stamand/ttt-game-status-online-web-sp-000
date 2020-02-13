@@ -1,3 +1,4 @@
+require 'pry'
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
@@ -11,7 +12,7 @@ def won?(board)
     win_position_1 = WIN_COMBINATIONS[i][0]
     win_position_2 = WIN_COMBINATIONS[i][1]
     win_position_3 = WIN_COMBINATIONS[i][2]
-    
+    binding.pry
     position_1 = board[WIN_COMBINATIONS[i][0]]
     position_2 = board[WIN_COMBINATIONS[i][1]]
     position_3 = board[WIN_COMBINATIONS[i][2]]
