@@ -68,18 +68,23 @@ end
 
 def winner(board)
   
-  number = board.select do |i|
-    i == "X" || i == "O"
-  end
-  
-  if won?(board) != false
-    if number.count % 2 == 1 
-      return "O"
-    else
-      return "X"
-    end
-  elsif draw?(board)
-    return nil
+  if combo = won?(board)
+    board[combo[0]]
   end
 end
+  
+#   number = board.select do |i|
+#     i == "X" || i == "O"
+#   end
+  
+#   if won?(board) != false
+#     if number.count % 2 == 1 
+#       return "O"
+#     else
+#       return "X"
+#     end
+#   elsif draw?(board)
+#     return nil
+#   end
+# end
 
